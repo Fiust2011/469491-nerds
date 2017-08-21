@@ -1,0 +1,25 @@
+body {
+	font-size: 16px;
+	line-height: 24px;
+	color: #283136;
+	font-family: Roboto;
+}
+
+h1 {
+	font-size: 55px;
+	line-height: 55px;
+	color: #000000;
+	font-family: Roboto, Medium;
+	
+}
+
+h2 {
+	font-size: 16px;
+	line-height: 24px;
+	color: #000000;
+	font-family: Roboto, Bold;
+	font-weight: bold;
+	font-style: italic;
+	font-variant: small-caps;
+
+}
