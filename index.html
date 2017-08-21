@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Дизайн-студия: Нёрдс</title>
+		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
 		<header class="main-header">
@@ -23,8 +24,8 @@
 				</div>
 			</div>
 		</header>
-		<main class="container">
-			<div class="content">
+		<main>
+			<div class="container">
 				<h1 class="visually-hidden">Услуги Дизайн-студии: «Нёрдс»</h1>
 				<div class="slider">
 					<ul class="slider-list">
@@ -32,7 +33,7 @@
 							<input type="radio" id="btn-1" name="toggle" checked>
 							<label for="btn-1">
 								<span>Долго, дорого,<br> скрупулезно</span>
-								<p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+								<span>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</span>
 								<a class="btn slide-btn" href="#">Узнать больше</a>
 							</label>
 						</li>
@@ -40,7 +41,7 @@
 							<input type="radio" id="btn-2" name="toggle">
 							<label for="btn-2">
 								<span>Любим математику<br> как никто другой</span>
-								<p>Никакого креатива, только математические формулы для расчета и</p>
+								<span>Никакого креатива, только математические формулы для расчета и</span>
 								<a class="btn slide-btn" href="#">Узнать больше</a>
 							</label>
 						</li>
@@ -48,7 +49,7 @@
 							<input type="radio" id="btn-3" name="toggle">
 							<label for="btn-3">
 								<span>Только ночь,<br> только хардкор</span>
-								<p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работ</p>
+								<span>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работ</span>
 								<a class="btn slide-btn" href="#">Узнать больше</a>
 							</label>
 						</li>
@@ -118,7 +119,7 @@
 				</section>
 				
 				<section class="partners">
-					<h2 class="visually-hidden">Партнёры</h1>
+					<h2 class="visually-hidden">Партнёры</h2>
 					<ul class="partners-list">
 						<li><a href="http://htmlacademy.ru"><img src="images/logo-htmlacademy.png" alt="HTML Academy"></a></li>	
 						<li><a href="#"><img src="images/logo-barbershop.png" alt="Барбершоп «Бородинский»"></a></li>
@@ -143,7 +144,22 @@
 					</div>
 				</section>
 			</div>
-			
+		</main>
+		<footer class="main-footer">
+			<div class="container">
+				<div class="social-list">
+					<ul>
+						<li><a class="social-button" href="#">Вконтакте</a></li>
+						<li><a class="social-button" href="#">Фейсбук</a></li>
+						<li><a class="social-button" href="#">Инстаграм</a></li>
+					</ul>
+				</div>
+				<div class="social-item">
+					<b>Давайте дружить, это выгодно</b>
+					<p>Скидка 10% для друзей из социальных сетей.></p>
+				</div>
+			</div>
+		</footer>
 			<div class="write-us">
 				<form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
 					<p>
@@ -162,41 +178,5 @@
 					</p>
 				</form>
 			</div>
-		</main>
-		<footer class="main-footer">
-			<div class="content">
-				<div class="social-list">
-					<ul>
-						<li><a class="social-button" href="#">Вконтакте</a></li>
-						<li><a class="social-button" href="#">Фейсбук</a></li>
-						<li><a class="social-button" href="#">Инстаграм</a></li>
-					</ul>
-				</div>
-				<div class="social-item">
-					<b>Давайте дружить, это выгодно</b>
-					<p>Скидка 10% для друзей из социальных сетей.></p>
-				</div>
-			</div>
-		</footer>
-		
-		<section class="modal modal-login">
-			<h2>Личный кабинет</h2>
-			<p>Введите свой логин и пароль.</p>
-			<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-				<p>
-					<input class="login-icon-user" type="text" name="login" placeholder="Логин">
-				</p>
-				<p>
-					<input class="login-icon-password" type="password" name="password" placeholder="Пароль">
-				</p>
-				<p class="login-password-info">
-					<input type="checkbox" name="remember" class="visually-hidden">
-					Запомните меня
-					<a class="restore" href="#">Я забыл пароль!</a>
-				</p>
-				<button class="button" type="submit">Войти</button>
-			</form>
-			<button class="modal-close" type="button">Закрыть</button>
-		</section>
 	</body>
 </html>

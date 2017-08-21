@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Дизайн-студия: Нёрдс</title>
+		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
 		<header class="main-header">
@@ -23,16 +24,10 @@
 				</div>
 			</div>
 		</header>
-		<main class="container">
-			<div class="content">
+		<main>
+			<div class="container">
 				<h1 class="page-title">Магазин готовых шаблонов</h1>
-				<div class="visually-hidden">
-					<ul class="breadcrumbs">
-						<li><a href="index.html">Главная</a></li>
-						<li><a href="catalog.html">Магазин</a></li>
-						<li class="breadcrumbs-current">Магазин готовых шаблонов</li>
-					</ul>
-				</div>
+			<div>
 				<section class="filters">
 					<h2 class="visually-hidden">Фильтр шаблонов</h2>
 					<form class="filter" method="post" oninput="maxval.value=max.value" action="https://echo.htmlacademy.ru">
@@ -111,14 +106,16 @@
 				
 				<section class="catalog">
 					<h2 class="visually-hidden">Каталог шаблонов</h2>
-					<ul class="list-filter">
-						<li>Сортировать:</li>
-						<li><a href="#"><span>по цене</span></a></li>
-						<li><a href="#"><span>по типу</span></a></li>
-						<li><a href="#"><span>по названию</span></a></li>
-						<li><a href="#">по убыванию</a></li>
-						<li><a href="#">по возрастанию</a></li>
-					</ul>
+					<div class="list-filter">
+						<p>Сортировать:<p>
+							<ul class="list-filter">
+								<li><a href="#">по цене</a></li>
+								<li><a href="#">по типу</a></li>
+								<li><a href="#">по названию</a></li>
+							</ul>
+						<button type="button">по убыванию</button>
+						<button type="button">по возрастанию</button>
+					</div>
 					<ul class="catalog-list">
 						<li class="catalog-item">
 							<h3>
@@ -218,7 +215,7 @@
 						<li class="pagination-item"><a href="#">Следующая</a></li>
 					</ul>
 				</section>
-					
+			</div>	
 				<section class="contacts">
 					<h2 class="visually-hidden">Контактная информация</h2>
 					<div class="contacts-map">
@@ -236,6 +233,23 @@
 				</section>
 			</div>
 				
+
+		</main>
+		<footer class="main-footer">
+			<div class="container">
+				<div class="social-list">
+					<ul>
+						<li><a class="social-button" href="#">Вконтакте</a></li>
+						<li><a class="social-button" href="#">Фейсбук</a></li>
+						<li><a class="social-button" href="#">Инстаграм</a></li>
+					</ul>
+				</div>
+				<div class="social-item">
+					<b>Давайте дружить, это выгодно</b>
+					<p>Скидка 10% для друзей из социальных сетей.></p>
+				</div>
+			</div>
+		</footer>
 			<div class="write-us">
 				<form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
 					<p>
@@ -254,21 +268,5 @@
 					</p>
 				</form>
 			</div>
-		</main>
-		<footer class="main-footer">
-			<div class="content">
-				<div class="social-list">
-					<ul>
-						<li><a class="social-button" href="#">Вконтакте</a></li>
-						<li><a class="social-button" href="#">Фейсбук</a></li>
-						<li><a class="social-button" href="#">Инстаграм</a></li>
-					</ul>
-				</div>
-				<div class="social-item">
-					<b>Давайте дружить, это выгодно</b>
-					<p>Скидка 10% для друзей из социальных сетей.></p>
-				</div>
-			</div>
-		</footer>
 	</body>
 </html>
