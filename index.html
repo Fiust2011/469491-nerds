@@ -4,18 +4,19 @@
 		<meta charset="utf-8">
 		<title>Нёрдс</title>
 		<link href="css/style.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Roboto:100,300,500&subset=latin,cyrillic-ext,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
 		<header class="main-header">
 			<div class="container">
 				<nav class="main-navigation">
-					<a class="main-header-logo">
-						<img src="img/logo.svg" width="111" height="24" alt="Логотип дизайн-студии: «Нёрдс»">
+					<a class="main-header-logo" href="index.html">
+						<img src="img/nerds-logo.svg" width="111" height="24" alt="Нёрдс">
 					</a>
 					<ul class="site-navigation">
-						<li><a href="info.html">Студия</a></li>
+						<li><a href="index.html">Студия</a></li>
 						<li><a href="info.html">Клиенты</a></li>
-						<li><a href="info.html">Магазин</a></li>
+						<li><a href="catalog.html">Магазин</a></li>
 						<li><a href="info.html">Контакты</a></li>
 					</ul>
 				</nav>
@@ -60,7 +61,7 @@
 						<li class="advantages-item">
 							<p class="advantages-item-image">
 								<a href="advantages-red.html">
-									<img src="img/illustration-1.jpg" width="220" height="165" alt="Веб-сайты">
+									<img src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
 								</a>
 							</p>
 							<h3>
@@ -72,7 +73,7 @@
 						<li class="advantages-item">
 							<p class="advantages-item-image">
 								<a href="advantages-green.html">
-									<img src="img/illustration-2.jpg" width="220" height="165" alt="Приложения">
+									<img src="img/illustration-2.jpg" width="300" height="146" alt="Приложения">
 								</a>
 							</p>
 							<h3>
@@ -84,7 +85,7 @@
 						<li class="advantages-item">
 							<p class="advantages-item-image">
 								<a href="advantages-yellow.html">
-									<img src="img/illustration-3.jpg" width="220" height="165" alt="Презентации">
+									<img src="img/illustration-3.jpg" width="300" height="146" alt="Презентации">
 								</a>
 							</p>
 							<h3>
@@ -108,7 +109,7 @@
 				
 				<section class="studio">
 					<figure class="studio-content">
-						<a href="#"><img src="img/nerds-illustration.jpg" width="286" height="164" alt="NЁRDS DESIGN STUDIO"></a>
+						<a href="#"><img src="img/nerds-illustration.jpg" width="360" height="208" alt="NЁRDS DESIGN STUDIO"></a>
 					</figure>
 					<h2 class="title">C 2004 года любим точность во всем:</h2>
 					<ul class="studio-list">
@@ -121,10 +122,10 @@
 				<section class="partners">
 					<h2 class="visually-hidden">Партнёры</h2>
 					<ul class="partners-list">
-						<li><a href="http://htmlacademy.ru"><img src="images/logo-htmlacademy.png" alt="HTML Academy"></a></li>	
-						<li><a href="#"><img src="images/logo-barbershop.png" alt="Барбершоп «Бородинский»"></a></li>
-						<li><a href="#"><img src="images/logo-pink.png" alt="PINK"></a></li>
-						<li><a href="#"><img src="images/logo-mishka.png" alt="MISHKA"></a></li>
+						<li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.png" alt="HTML Academy"></a></li>	
+						<li><a href="#"><img src="img/logo-barbershop.png" alt="Барбершоп «Бородинский»"></a></li>
+						<li><a href="#"><img src="img/logo-pink.png" alt="PINK"></a></li>
+						<li><a href="#"><img src="img/logo-mishka.png" alt="MISHKA"></a></li>
 					</ul>
 				</section>
 				
@@ -132,7 +133,7 @@
 					<h2 class="visually-hidden">Контактная информация</h2>
 					<div class="contacts-map">
 						<a href="map.html">
-							<img src="img/map.jpg" width="220" height="165" alt="map">
+							<img src="img/map.svg" width="1440" height="416" alt="191186, Санкт-Петербург ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75">
 						</a>
 					</div>
 					<div class="contacts-item">
@@ -140,7 +141,7 @@
 						<p>191186, Санкт-Петербург,<br>
 						ул. Б. Конюшенная, д. 19/8</p>
 						<p>тел. +7 (812) 275-75-75</p>
-						<button type="button">Напишите нам</button>
+						<button class="button" type="button">Напишите нам</button>
 					</div>
 				</section>
 			</div>
@@ -156,7 +157,7 @@
 				</div>
 				<div class="social-item">
 					<b>Давайте дружить, это выгодно</b>
-					<p>Скидка 10% для друзей из социальных сетей.></p>
+					<p>Скидка 10% для друзей из социальных сетей.</p>
 				</div>
 			</div>
 		</footer>
@@ -173,8 +174,8 @@
 						<label for="text-field">Текст письма:</label>
 						<textarea name="contact-text" id="text-field" rows="4">В свободной форме</textarea>
 					<p>
-						<input type="submit" value="Отправить">
-						<input type="button" value="Отмена">
+						<button class="button" type="submit">Отправить</button>
+						<input class="button" type="button" value="Отмена">
 					</p>
 				</form>
 			</div>

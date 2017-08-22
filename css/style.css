@@ -24,3 +24,7 @@ h2.title {
 	font-style: italic;
 	font-variant: small-caps;
 }
+
+.range .range-controls {
+	cursor:pointer;
+}
