@@ -3,8 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Нёрдс</title>
+		<link rel="stylesheet" href="css/normalize.css">
 		<link href="css/style.css" rel="stylesheet">
-		<link href='http://fonts.googleapis.com/css?family=Roboto:100,300,500&subset=latin,cyrillic-ext,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
 		<header class="main-header">
@@ -104,7 +105,7 @@
 								</li>
 							</ul>
 						</fieldset>
-						<button class="button" type="submit" class="filter-button button">Показать</button>
+						<button class="button filter-button" type="submit">Показать</button>
 					</form>
 				</section>
 				
@@ -224,7 +225,7 @@
 					<h2 class="visually-hidden">Контактная информация</h2>
 					<div class="contacts-map">
 						<a href="map.html">
-							<img src="img/map.svg" width="1440" height="416" alt="191186, Санкт-Петербург ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75">
+							<img src="img/map.jpg" width="1440" height="416" alt="191186, Санкт-Петербург ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75">
 						</a>
 					</div>
 					<div class="contacts-item">
@@ -255,6 +256,7 @@
 			</div>
 		</footer>
 			<div class="write-us">
+				<h2>Напишите нам</h2>
 				<form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
 					<p>
 						<label for="login-field" class="contact-name">Ваше имя:</label>
@@ -267,8 +269,8 @@
 						<label for="text-field">Текст письма:</label>
 						<textarea name="contact-text" id="text-field" rows="4">В свободной форме</textarea>
 					<p>
-						<button class="button" type="submit">Отправить</button>
-						<input class="button" type="button" value="Отмена">
+						<button class="button submit-button" type="submit">Отправить</button>
+						<button class="button cancel-button" type="button" value="Отмена"></button>
 					</p>
 				</form>
 			</div>
