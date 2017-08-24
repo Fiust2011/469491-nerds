@@ -252,11 +252,32 @@ div.social-item b {
 	text-transform: none;
 }
 
+.write-us label {
+	font-size: 16px;
+	line-height: 18px;
+	color: #000000;
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	text-transform: none;
+}
+
 .write-us input {
 	font: inherit;
-
+	
 	background-color: transparent;
 	border: 2px solid #d7dcde;
+}
+
+.write-us input ,
+.write-us textarea {
+	font-size: 16px;
+	line-height: 18px;
+	color: #444444;
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	text-transform: none;
 }
 
 .range .range-controls {
