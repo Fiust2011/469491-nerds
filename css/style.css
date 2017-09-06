@@ -15,19 +15,6 @@ body {
 	background-repeat: repeat;
 }
 
-.page-title {
-	margin: 0;
-	margin-bottom: 108px;
-	padding: 0;
-	
-	font-size: 55px;
-	line-height: 55px;
-	color: #000000;
-	font-family: 'Roboto';
-	font-style: normal;
-	font-weight: 500;
-}
-
 a {
 	text-decoration: none;
 }
@@ -83,10 +70,7 @@ input[type="radio"].visually-hidden {
 
 .main-header {
 	width: 100%;
-}
-
-.inner-page .main-header {
-	margin-bottom: 78px;
+	background-color: #eeeeee;
 }
 
 .main-navigation {
@@ -219,6 +203,13 @@ input[type="radio"].visually-hidden {
 	background-position: 0 0;
 }
 
+.back-top {
+	width: 100%;
+	background-color: #eeeeee;
+}
+
+.main-slider,
+.main-top,
 .container {
 	width: 1160px;
 	margin: 0 auto;
@@ -649,6 +640,25 @@ section.studio ul.studio-list {
 	opacity: 0.1;
 }
 
+.inner-page .back-top {
+	padding-bottom: 108px;
+	padding-top: 78px;
+	margin-bottom: 58px;
+}
+
+.page-title {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	
+	font-size: 55px;
+	line-height: 55px;
+	color: #000000;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+}
+
 .catalog-columns {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -660,6 +670,7 @@ section.studio ul.studio-list {
 
 .filter fieldset {
 	border: none;
+	padding-left: 0px;
 }
 
 .filter legend {
