@@ -21,7 +21,7 @@
 						<li><a href="info.html">Контакты</a></li>
 					</ul>
 					<div class="basket-navigation">
-						<a class="basket" href="basket/">корзина</a>
+						<a class="basket" href="basket.html/">корзина</a>
 					</div>
 				</div>
 			</nav>
@@ -32,21 +32,21 @@
 				<div class="catalog-columns">
 					<section class="filter">
 						<h2 class="visually-hidden">Фильтр шаблонов</h2>
-						<form class="filter" method="post" oninput="maxval.value=max.value" action="https://echo.htmlacademy.ru">
+						<form class="filter" action="form.php" method="GET">
 							<fieldset>
 								<legend>Стоимость:</legend>
-								<div class="range">
-									<label for="max">
-										<input type="range" id="max" min="0" max="15000">
-									</label>
-								</div>
-								<div class="range-controls">
-									от
-									<output name="minval">0</output>
-								</div>
-								<div class="range-controls">
-									до
-									<output name="maxval">15000</output>
+								<div class="range-filter">
+									<div class="range-controls">
+										<div class="scale">
+											<div class="bar"></div>
+										</div>
+										<div class="toggle toggle-min"></div>
+										<div class="toggle toggle-max"></div>
+									</div>
+									<div class="price-controls">
+										<label class="min-price">от <input name="min-price" type="text" value="0"></label>
+										<label class="max-price">до <input name="max-price" type="text" value="15 000"></label>
+									</div>
 								</div>
 							</fieldset>
 							<fieldset>
