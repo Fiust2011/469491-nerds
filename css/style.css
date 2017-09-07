@@ -177,12 +177,6 @@ input[type="radio"].visually-hidden {
 	color: rgba(0,0,0,0.3);
 }
 
-.site-navigation a:focus,
-.basket-navigation a:focus {
-	/*color: #000000;
-	border-bottom: 2px solid #fb565a;*/
-}
-
 .basket-navigation .basket {
 	position: relative;
 	padding-left: 86px;
@@ -643,7 +637,7 @@ section.studio ul.studio-list {
 .inner-page .back-top {
 	padding-bottom: 108px;
 	padding-top: 78px;
-	margin-bottom: 58px;
+	margin-bottom: 56px;
 }
 
 .page-title {
@@ -679,7 +673,7 @@ section.studio ul.studio-list {
 	line-height: 30px;
 	font-family: 'Roboto', 'Arial', sans-serif;
 	font-style: normal;
-	font-weight: 500;
+	font-weight: 700;
 	text-transform: uppercase;
 }
 
@@ -695,8 +689,9 @@ section.studio ul.studio-list {
 }
 
 .range-filter {
-	width: 240px;
-	margin: 14px auto; /* для демонстрации */
+	width: 260px;
+	margin-top: 48px;
+	margin-bottom: 54px;
 }
 
 .range-controls {
@@ -705,20 +700,20 @@ section.studio ul.studio-list {
 	padding-top: 39px;
 	padding-right: 20px;
 	padding-left: 20px;
-	margin-bottom: 15px;
-	border-radius: 5px;
-	background: #f1f1f1;
+	margin-bottom: 14px;
+	border-radius: 3px;
+	background-color: #eeeeee;
 }
 
 .range-controls .scale {
 	height: 2px;
-	background: #d7dcde;
+	background-color: #d7dcde;
 }
 
 .range-controls .bar {
 	width: 70%;
 	height: 2px;
-	background: #00ca74;
+	background-color: #00ca74;
 }
 
 .range-controls .toggle {
@@ -730,7 +725,7 @@ section.studio ul.studio-list {
 	cursor: pointer;
 	border: 8px solid #fff;
 	border-radius: 50%;
-	background: #ababab;
+	background-color: #ababab;
 	-webkit-box-shadow: 0 2px 1px 0 #cfcfcf;
 		box-shadow: 0 2px 1px 0 #cfcfcf;
 }
@@ -740,7 +735,7 @@ section.studio ul.studio-list {
 }
 
 .range-controls .toggle-max {
-	left: 145px;
+	left: 160px;
 }
 
 .price-controls {
@@ -749,6 +744,7 @@ section.studio ul.studio-list {
 
 .price-controls label {
 	font-size: 16px;
+	line-height: 22px;
 	display: inline-block;
 	width: 50%;
 }
@@ -762,27 +758,124 @@ section.studio ul.studio-list {
 	font-size: 16px;
 	width: 60px;
 	margin-left: 10px;
-	padding: 8px 10px;
+	padding: 10px 10px;
 	text-align: center;
 	color: #283136;
 	border: none;
-	border-radius: 5px;
-	background: #f1f1f1;
+	border-radius: 3px;
+	background-color: #eeeeee;
 }
 
 
 
 .filter {
 	width: 260px;
+
+}
+
+.filter fieldset {
+	margin: 0;
+	padding: 0;
 }
 
 .filter ul {
 	list-style: none;
 	font-size: 16px;
 	line-height: 20px;
+	margin: 0;
+	padding: 0;
+	
+	background: rgba(234, 255, 45, 0.2);
+	box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
 }
 
+.filter-radio .filter-option {
+	list-style: none;
+	height: 25px:
+	text-align: center;
+}
+/* ---------------------делаю сейчас ------------------------*/
+.filter-radio {
+	display: inline-block;
+	width: 260px;
+	margin-right: -4px;
+}
+
+.filter-radio label {
+	display: block;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+input[type="radio"] {
+  visibility: hidden;
+  position: absolute;
+}
+
+input[type="radio"] + label:before {
+	content: "";
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	margin-right: 10px;
+	vertical-align: middle;
+
+}
+
+input[type="radio"]:checked + label:before {
+	
+	background-image: url("../img/radio-on.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+input[type="radio"] + label:before {
+	background-image: url("../img/radio-off.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+/* ---------------------делаю сейчас ------------------------*/
+
+.filter-radio .filter-option:nth-child(1) {
+	padding-top: 14px;
+	padding-bottom: 16px;
+}
+
+.filter-radio .filter-option:nth-child(3) {
+	padding-top: 16px;
+	padding-bottom: 41px;
+}
+/*
+.filter-input-radio::before {
+	content: "";
+	
+	position: absolute;
+	
+	top: 10px;
+	left: 1px;
+	
+	width: 25px;
+	height: 25px;
+	
+	background-image: url("../img/radio-off.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+*/
+
 .button.filter-button {
+	display: inline-block;
+	padding: 17px 40px;
+	color: rgba(255,255,255,1);
+	min-width: 260px;
+	height: 50px;
+	background-color: #eeeeee;
+	border-radius: 3px;
+	text-align: center;
+	vertical-align: middle;
+	border: none;
+
 	list-style: none;
 	font-size: 16px;
 	line-height: 18px;
@@ -790,14 +883,7 @@ section.studio ul.studio-list {
 	font-family: 'Roboto', 'Arial', sans-serif;
 	font-style: normal;
 	font-weight: 500;
-	text-transform: none;
-	
-	text-align: center;
-	vertical-align: middle;
-	text-transform: none;
-
-	background-color: #eeeeee;
-	border: none;
+	text-transform: uppercase;
 }
 
 .button.filter-button:hover,
