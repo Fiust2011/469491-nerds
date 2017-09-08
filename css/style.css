@@ -213,56 +213,56 @@ input[type="radio"].visually-hidden {
 .slider {
 	background-color: #eeeeee;
 	
-	position:relative;
-	width:100%;
-	height:430px;
-	margin:0 auto;
+	position: relative;
+	width: 100%;
+	height: 430px;
+	margin: 0 auto;
 	margin-bottom: 80px;
 	padding: 0;
 }
 .slider input[type=radio] {
-	position:absolute;
-	opacity:0;
+	position: absolute;
+	opacity: 0;
 }
 .slider-controls {
-	position:absolute;
-	bottom:95px;
-	left:50%;
-	width:200px;
-	height:10px;
-	margin-left:-100px;
-	text-align:center;
-	z-index:1000;
+	position: absolute;
+	bottom: 95px;
+	left: 50%;
+	width: 200px;
+	height: 10px;
+	margin-left: -100px;
+	text-align: center;
+	z-index: 1000;
 }
 .slider-controls label {
-	display:inline-block;
-	width:4px;
-	height:4px;
-	margin:0 3px;
-	background:white;
-	border:3px solid white;
-	vertical-align:top;
-	border-radius:50%;
-	cursor:pointer;
+	display: inline-block;
+	width: 4px;
+	height: 4px;
+	margin: 0 3px;
+	background: white;
+	border: 3px solid white;
+	vertical-align: top;
+	border-radius: 50%;
+	cursor: pointer;
 }
 #btn-1:checked ~ .slider-controls label[for="btn-1"],
 #btn-2:checked ~ .slider-controls label[for="btn-2"],
 #btn-3:checked ~ .slider-controls label[for="btn-3"] { 
-	background:#c1c1c1;
+	background: #c1c1c1;
 }
 .slide {
-	position:absolute;
-	top:0;
-	left:0;
-	width:100%;
-	height:100%;
-	overflow:hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
 }
 .slide-text {
-	width:560px;
+	width: 560px;
 	padding-bottom: 80px;
 	padding-top: 78px;
-	color:#283136;
+	color: #283136;
 }
 .slide-title {
 	font-size: 55px;
@@ -279,48 +279,48 @@ input[type="radio"].visually-hidden {
 }
 
 .slide .btn {
-	display:block;
-	width:240px;
-	padding:13px 0;
-	margin-top:40px;
-	font-size:16px;
+	display: block;
+	width: 240px;
+	padding: 13px 0;
+	margin-top: 40px;
+	font-size: 16px;
 	color: rgba(255,255,255,1);
-	text-transform:uppercase;
-	text-align:center;
-	text-decoration:none;
-	background-color:#fb565a;
-	border-radius:3px;
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
+	background-color: #fb565a;
+	border-radius: 3px;
 }
 
 .slide .btn:hover,
 .slide .btn:focus {
-	background-color:#e74246;
+	background-color: #e74246;
 }
 
 .slide .btn:active {
 	color: rgba(255,255,255,0.3);
-	background-color:#d7373b;
+	background-color: #d7373b;
 	-webkit-box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 	        box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .slide:nth-child(1){
-	background-image:url("../img/slider-bg.png");
-	background-repeat:no-repeat;
-	background-position:100%;
+	background-image: url("../img/slider-bg.png");
+	background-repeat: no-repeat;
+	background-position: 100%;
 }
 .slide:nth-child(2){
-	background-image:url("../img/slider-bg-2.png");
-	background-repeat:no-repeat;
-	background-position:100%;
+	background-image: url("../img/slider-bg-2.png");
+	background-repeat: no-repeat;
+	background-position: 100%;
 }
 .slide:nth-child(3){
-	background-image:url("../img/slider-bg-3.png");
-	background-repeat:no-repeat;
-	background-position:100%;
+	background-image: url("../img/slider-bg-3.png");
+	background-repeat: no-repeat;
+	background-position: 100%;
 }
 .slide{
-	display:none;
+	display: none;
 }
 #btn-1:checked ~ .slides .slide:nth-child(1) { 
 	display: block;
@@ -353,7 +353,7 @@ input[type="radio"].visually-hidden {
 	width: 360px;
 }
 
-.advantages-item  a {
+.advantages-item a {
 	color: #ffffff;
 }
 
@@ -374,18 +374,18 @@ input[type="radio"].visually-hidden {
 	color: rgba(255,255,255,1);
 	min-width: 126px;
 	height: 16px;
-	background-color:#fb565a;
+	background-color: #fb565a;
 	border-radius: 3px;
 }
 
 .button.advantages-button-red:hover,
 .button.advantages-button-red:focus {
-	background-color:#e74246;
+	background-color: #e74246;
 }
 
 .button.advantages-button-red:active {
 	color: rgba(255,255,255,0.3);
-	background-color:#d7373b;
+	background-color: #d7373b;
 	-webkit-box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 	        box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 }
@@ -402,12 +402,12 @@ input[type="radio"].visually-hidden {
 
 .button.advantages-button-green:hover,
 .button.advantages-button-green:focus {
-	background-color:#00bc6c;
+	background-color: #00bc6c;
 }
 
 .button.advantages-button-green:active {
 	color: rgba(255,255,255,0.3);
-	background-color:#00aa62;
+	background-color: #00aa62;
 	-webkit-box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 	        box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 }
@@ -424,12 +424,12 @@ input[type="radio"].visually-hidden {
 
 .button.advantages-button-yellow:hover,
 .button.advantages-button-yellow:focus {
-	background-color:#eab534;
+	background-color: #eab534;
 }
 
 .button.advantages-button-yellow:active {
 	color: rgba(255,255,255,0.3);
-	background-color:#e5a722;
+	background-color: #e5a722;
 	-webkit-box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 	        box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 }
@@ -784,17 +784,14 @@ section.studio ul.studio-list {
 	line-height: 20px;
 	margin: 0;
 	padding: 0;
-	
-	background: rgba(234, 255, 45, 0.2);
-	box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
 }
 
 .filter-radio .filter-option {
 	list-style: none;
-	height: 25px:
-	text-align: center;
+	height: 25px;
+	vertical-align: middle;
 }
-/* ---------------------делаю сейчас ------------------------*/
+
 .filter-radio {
 	display: inline-block;
 	width: 260px;
@@ -802,40 +799,75 @@ section.studio ul.studio-list {
 }
 
 .filter-radio label {
-	display: block;
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-top: 1px;
+	padding-left: 36px;
 	margin-bottom: 0px;
 	margin-top: 0px;
 }
 
-input[type="radio"] {
-  visibility: hidden;
-  position: absolute;
+.filter-radio input[type="radio"] {
+	display: none;
 }
 
-input[type="radio"] + label:before {
+.filter-radio input[type=radio] + label::before {
 	content: "";
 	display: inline-block;
+	position: absolute;
 	width: 25px;
 	height: 25px;
-	margin-right: 10px;
+	left: 1px;
+	top: -1px;
 	vertical-align: middle;
-
 }
 
-input[type="radio"]:checked + label:before {
-	
+.filter-radio input[type=radio]:checked + label::before {
 	background-image: url("../img/radio-on.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
 
-input[type="radio"] + label:before {
+.filter-radio input[type=radio] + label::before {
 	background-image: url("../img/radio-off.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
 
-/* ---------------------делаю сейчас ------------------------*/
+.filter-radio input[type=radio]:checked + label:hover::before {
+	
+	background-image: url("../img/radio-on-h.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.filter-option Input[type=radio] + label:hover::before{
+	background: url("../img/radio-off-h.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.filter-radio input[type=radio]:checked + label:disabled::before {
+	
+	background-image: url("../img/radio-on-d.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.filter-radio input[type=radio] + label:disabled::before {
+	background: url("../img/radio-off-d.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.filter-radio label:hover {
+	color: #000000;
+}
+
+.filter-radio label:disabled {
+	color: rgba(40,49,54,0.3);
+}
 
 .filter-radio .filter-option:nth-child(1) {
 	padding-top: 14px;
@@ -846,23 +878,105 @@ input[type="radio"] + label:before {
 	padding-top: 16px;
 	padding-bottom: 41px;
 }
-/*
-.filter-input-radio::before {
+
+.filter-checkbox .filter-option {
+	list-style: none;
+	height: 23px;
+	vertical-align: middle;
+}
+
+.filter-checkbox {
+	display: inline-block;
+	width: 260px;
+	margin-right: -4px;
+}
+
+.filter-checkbox label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-top: 1px;
+	padding-left: 36px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+.filter-checkbox input[type="checkbox"] {
+	display: none;
+}
+
+.filter-checkbox input[type=checkbox] + label::before {
 	content: "";
-	
+	display: inline-block;
 	position: absolute;
-	
-	top: 10px;
+	width: 23px;
+	height: 23px;
 	left: 1px;
-	
-	width: 25px;
-	height: 25px;
-	
-	background-image: url("../img/radio-off.svg");
+	top: -1px;
+	vertical-align: middle;
+}
+
+.filter-checkbox input[type=checkbox]:checked + label::before {
+	background-image: url("../img/checkbox-on.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
-*/
+
+.filter-checkbox input[type=checkbox] + label::before {
+	background-image: url("../img/checkbox-off.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.filter-checkbox input[type=checkbox]:checked + label:hover::before {
+	
+	background-image: url("../img/checkbox-on-h.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.filter-checkbox Input[type=checkbox] + label:hover::before{
+	background: url("../img/checkbox-off-h.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.filter-checkbox input[type=checkbox]:checked + label:disabled::before {
+	
+	background-image: url("../img/checkbox-on-d.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.filter-checkbox input[type=checkbox] + label:disabled::before {
+	background: url("../img/checkbox-off-d.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+label:hover {
+	color: #000000;
+}
+
+label:disabled {
+	color: rgba(40,49,54,0.3);
+}
+
+.filter-checkbox .filter-option:first-child {
+	padding-top: 15px;
+	padding-bottom: 18px;
+}
+
+.filter-checkbox .filter-option:nth-child(3) {
+	padding-top: 18px;
+	padding-bottom: 18px;
+}
+
+.filter-checkbox .filter-option:last-child {
+	padding-top: 18px;
+	padding-bottom: 49px;
+}
+
 
 .button.filter-button {
 	display: inline-block;
@@ -902,23 +1016,56 @@ input[type="radio"] + label:before {
 	width: 760px;
 }
 
-.list-filter {
-	width: 760px;
-	padding: 0;
-	margin: 0;
+.catalog-filter {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	width: 100%;
+	
+	margin-top: 6px;
+	margin-bottom: 48px;
 }
 
-.list-filter p {
+.list-filter,
+.button-filter ,
+.catalog-filter p {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.list-filter {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+	width: 280px;
+}
+
+.list-filter li:nth-child(2){
+	padding-left: 25px;
+	padding-right: 28px;
+}
+
+
+.catalog-filter p {
+	width: 160px;
+	
 	list-style: none;
 	font-size: 18px;
 	line-height: 18px;
 	font-family: 'Roboto', 'Arial', sans-serif;
 	font-style: normal;
 	font-weight: 700;
-	text-transform: none;
+	text-transform: uppercase;
 }
 
-.list-filter ul {
+.catalog-filter ul {
 	list-style: none;
 	font-size: 14px;
 	line-height: 18px;
@@ -929,29 +1076,54 @@ input[type="radio"] + label:before {
 	text-transform: uppercase;
 }
 
-.list-filter a:hover,
-.list-filter a:focus {
+.list-filter a,
+.button-filter button {
+	display: block;
+	padding-top: 5px;
+	padding-bottom: 8px;
+
+	vertical-align: middle;
+}
+
+.catalog-filter a:hover,
+.catalog-filter a:focus {
 	color: rgba(0,0,0,0.6);
 }
 
-.list-filter a:active {
+.catalog-filter a:active {
 	color: rgba(0,0,0,1);
 }
 
-.button.catalog-button {
-	background-color: rgba(166,166,166,0.2);
+.button-filter {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	width: 42px;
+	
+	list-style: none;
 }
 
-.button.catalog-button:hover,
-.button.catalog-button:focus  {
-	background-color: rgba(166,166,166,1);
+.button.button-filter {
+	background-color: #ffffff;
 }
 
-.button.catalog-button:active {
-	background-color: rgba(0,0,0,1);
+.button.button-filter .dir{
+	fill: #ededed;
 }
 
+.button.button-filter:hover .dir,
+.button.button-filter:focus .dir {
+	fill: #a6a6a6;
+}
 
+.button.button-filter:active .dir {
+	fill: #231f20;
+}
+
+/* ---------------------делаю сейчас ------------------------*/
 .catalog-list {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -968,36 +1140,137 @@ input[type="radio"] + label:before {
 }
 
 .catalog-item {
+	position: relative;
+	display: inline-block;
 	width: 360px;
+	height: 616px;
 	margin-bottom: 33px;
 	margin-right: 36px;
-	
-	background-color: #e9e9e9;
 	border: 1px solid rgba(77,77,77,0.1);
+	border-radius: 6px;
+	text-align: center;
 } 
+
+.browser {
+	height: 40px;
+}
+
+.browser .browser {
+	fill: #e9e9e9;
+}
+
+.catalog-item .actions{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 360px;
+	height: 232px;
+	background-color: #eeeeee;
+	z-index: 10;
+}
+
+.catalog-item .actions{
+	display: none;
+}
+.catalog-item:hover .actions{
+	display: block;
+}
+
+.catalog-item .image{
+	width: 360px;
+	height: 576px;
+}
+.catalog-item .image img {
+	max-width: 100%;
+}
+.actions-item {
+	margin: 0 auto;
+	padding: 0;
+	margin-top: 27px;
+	border: 0;
+	max-width: 200px;
+}
+
+.actions-item h3 {
+	min-height: 30px;
+	margin-top: 27px;
+	margin-bottom: 15px;
+	
+	font-size: 18px;
+	line-height: 24px;
+	color: #000000;
+	font-weight: 700;
+	text-transform: uppercase;  
+}
+.actions-item .description {
+	min-width: 200px;
+	min-height: 18px;
+	margin-top: 15px;
+	margin-bottom: 30px;
+	
+	font-size: 16px;
+	line-height: 18px;
+	color: #666666;
+}
+
+.actions-item .button {
+	position: relative;
+	display: inline-block;
+	margin-bottom: 44px;
+	padding: 0;
+	color: rgba(255,255,255,1);
+	min-width: 200px;
+	background-color: #fb565a;
+	border-radius: 3px;
+}
+
+.actions-item .button:hover,
+.actions-item .button:focus {
+	background-color: #e74246;
+}
+
+.actions-item .button:active {
+	color: rgba(255,255,255,0.3);
+	background-color: #d7373b;
+	-webkit-box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
+	box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
+}
 
 .catalog-item:nth-child(2n) {
 	margin-right: 0;
 }
 
 .catalog-item:hover {
-	-webkit-box-shadow: 6 0 15px rgba(0, 1, 1, 0.25);
-			box-shadow: 6 0 15px rgba(0, 1, 1, 0.25);
+	-webkit-box-shadow: 0 6px 15px rgba(0, 1, 1, 0.25);
+			box-shadow: 0 6px 15px rgba(0, 1, 1, 0.25);
 	border: 1px solid rgba(77,77,77,0.1);
 }
 
-.catalog-item-price .button {
+.catalog-item:hover .browser {
+	fill: #4d4d4d;
+}
+
+.actions .button {
 	line-height: 50px;
 	color: #ffffff;
 }
 
+/* ---------------------делаю сейчас ------------------------*/
+.pagination {
+	width: 443px;
+}
 
 .pagination-list {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+
 	padding: 0;
 	margin: 0;
 	margin-bottom: 55px;
-	
-	list-style: none;
 
 	list-style: none;
 	font-size: 16px;
@@ -1005,14 +1278,35 @@ input[type="radio"] + label:before {
 	color: #000000;
 	font-family: 'Roboto', 'Arial', sans-serif;
 	font-style: normal;
-	font-weight: 500;
+	font-weight: 400;
 	text-transform: none;
 }
 
 .pagination-item a {
+	display: block;
+	
 	color: #000000;
 
 	background-color: #eeeeee;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 2px;
+	
+	cursor: pointer;
+	text-align: center;
+}
+
+.pagination-item.pagination-item-current a {
+	line-height: 44px;
+	background-color: transparent;
+	border: 3px solid #dbdbdb;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.pagination-item.pagination-item-button a {
+	width: 260px;
 }
 
 .pagination-item a:hover,
@@ -1027,10 +1321,6 @@ input[type="radio"] + label:before {
 			box-shadow: inset 0 3px 0 rgba(0,1,1,0.1);
 }
 
-.pagination-item.pagination-item-current a {
-	background-color: transparent;
-	border: 3px solid #dbdbdb;
-}
 
 /* ----- Map ------------------ */
 
@@ -1082,12 +1372,12 @@ input[type="radio"] + label:before {
 
 .button.contacts-button:hover,
 .button.contacts-button:focus {
-	background-color:#e74246;
+	background-color: #e74246;
 }
 
 .button.contacts-button:active {
 	color: rgba(255,255,255,0.3);
-	background-color:#d7373b;
+	background-color: #d7373b;
 	-webkit-box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 	        box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 }
