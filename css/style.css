@@ -47,7 +47,6 @@ input[type="radio"].visually-hidden {
 .button {
 	font-size: 16px;
 	line-height: 18px;
-
 	text-align: center;
 	color: #ffffff;
 	vertical-align: middle;
@@ -70,6 +69,7 @@ input[type="radio"].visually-hidden {
 
 .main-header {
 	width: 100%;
+	
 	background-color: #eeeeee;
 }
 
@@ -210,15 +210,21 @@ input[type="radio"].visually-hidden {
 	padding: 0 20px;
 }
 
-.slider {
+.main-slider {
 	background-color: #eeeeee;
-	
+}
+
+.slider {
 	position: relative;
+	
 	width: 100%;
 	height: 430px;
 	margin: 0 auto;
 	margin-bottom: 80px;
 	padding: 0;
+	
+	background-color: #eeeeee;
+
 }
 .slider input[type=radio] {
 	position: absolute;
@@ -228,17 +234,21 @@ input[type="radio"].visually-hidden {
 	position: absolute;
 	bottom: 95px;
 	left: 50%;
+	
 	width: 200px;
 	height: 10px;
 	margin-left: -100px;
 	text-align: center;
+	
 	z-index: 1000;
 }
 .slider-controls label {
 	display: inline-block;
+	
 	width: 4px;
 	height: 4px;
 	margin: 0 3px;
+	
 	background: white;
 	border: 3px solid white;
 	vertical-align: top;
@@ -254,14 +264,17 @@ input[type="radio"].visually-hidden {
 	position: absolute;
 	top: 0;
 	left: 0;
+	
 	width: 100%;
 	height: 100%;
+	
 	overflow: hidden;
 }
 .slide-text {
 	width: 560px;
 	padding-bottom: 80px;
 	padding-top: 78px;
+	
 	color: #283136;
 }
 .slide-title {
@@ -280,14 +293,17 @@ input[type="radio"].visually-hidden {
 
 .slide .btn {
 	display: block;
+	
 	width: 240px;
 	padding: 13px 0;
 	margin-top: 40px;
+	
 	font-size: 16px;
 	color: rgba(255,255,255,1);
 	text-transform: uppercase;
 	text-align: center;
 	text-decoration: none;
+	
 	background-color: #fb565a;
 	border-radius: 3px;
 }
@@ -370,10 +386,12 @@ input[type="radio"].visually-hidden {
 
 .button.advantages-button-red {
 	display: inline-block;
-	padding: 17px 40px;
-	color: rgba(255,255,255,1);
+	
 	min-width: 126px;
 	height: 16px;
+	padding: 17px 40px;
+	
+	color: rgba(255,255,255,1);
 	background-color: #fb565a;
 	border-radius: 3px;
 }
@@ -392,10 +410,13 @@ input[type="radio"].visually-hidden {
 
 .button.advantages-button-green {
 	display: inline-block;
-	padding: 17px 40px;
-	color: rgba(255,255,255,1);
+	
 	min-width: 126px;
 	height: 16px;
+	padding: 17px 40px;
+	
+	color: rgba(255,255,255,1);
+	
 	background-color:#00ca74;
 	border-radius: 3px;
 }
@@ -414,10 +435,12 @@ input[type="radio"].visually-hidden {
 
 .button.advantages-button-yellow {
 	display: inline-block;
-	padding: 17px 40px;
-	color: rgba(255,255,255,1);
+	
 	min-width: 126px;
 	height: 16px;
+	padding: 17px 40px;
+	
+	color: rgba(255,255,255,1);
 	background-color:#efc84a;
 	border-radius: 3px;
 }
@@ -505,9 +528,11 @@ article.studio li {
 
 article.studio li::before {
 	content: "";
+	
 	position: absolute;
 	top: 10px;
 	left: 1px;
+	
 	width: 25px;
 	height: 2px;
 	
@@ -552,6 +577,8 @@ section.studio figure {
 }
 
 section.studio h2.title {
+	margin-bottom: 48px;
+	
 	font-size: 16px;
 	line-height: 24px;
 	color: #000000;
@@ -560,12 +587,11 @@ section.studio h2.title {
 	font-weight: 700;
 	text-transform: uppercase;
 	text-align: center;
-	
-	margin-bottom: 48px;
 }
 
 section.studio b {
 	display: inline-block;
+	
 	margin-bottom: 25px;
 	
 	font-size: 45px;
@@ -593,6 +619,7 @@ section.studio ul.studio-list {
 	width: 108px;
 	padding-right: 12px;
 	padding-bottom: 14px;
+	
 	text-align: left;
 }
 
@@ -635,9 +662,13 @@ section.studio ul.studio-list {
 }
 
 .inner-page .back-top {
-	padding-bottom: 108px;
-	padding-top: 78px;
 	margin-bottom: 56px;
+}
+
+.main-top {
+	padding-top: 78px;
+	padding-bottom: 108px;
+	background-color: #eeeeee;
 }
 
 .page-title {
@@ -663,8 +694,9 @@ section.studio ul.studio-list {
 }
 
 .filter fieldset {
-	border: none;
 	padding-left: 0px;
+	
+	border: none;
 }
 
 .filter legend {
@@ -696,11 +728,13 @@ section.studio ul.studio-list {
 
 .range-controls {
 	position: relative;
+	
 	height: 41px;
 	padding-top: 39px;
 	padding-right: 20px;
 	padding-left: 20px;
 	margin-bottom: 14px;
+	
 	border-radius: 3px;
 	background-color: #eeeeee;
 }
@@ -720,8 +754,10 @@ section.studio ul.studio-list {
 	position: absolute;
 	top: 30px;
 	left: 0px;
+	
 	width: 4px;
 	height: 4px;
+	
 	cursor: pointer;
 	border: 8px solid #fff;
 	border-radius: 50%;
@@ -743,10 +779,14 @@ section.studio ul.studio-list {
 }
 
 .price-controls label {
+	display: inline-block;
+	
+	width: 50%;
+	
 	font-size: 16px;
 	line-height: 22px;
-	display: inline-block;
-	width: 50%;
+	
+	vertical-align: top;
 }
 
 .max-price {
@@ -754,13 +794,15 @@ section.studio ul.studio-list {
 }
 
 .price-controls input {
-	font-family: 'Roboto', 'Arial', sans-serif;
-	font-size: 16px;
 	width: 60px;
 	margin-left: 10px;
 	padding: 10px 10px;
 	text-align: center;
+	
+	font-family: 'Roboto', 'Arial', sans-serif;
+	font-size: 16px;
 	color: #283136;
+	
 	border: none;
 	border-radius: 3px;
 	background-color: #eeeeee;
@@ -779,33 +821,41 @@ section.studio ul.studio-list {
 }
 
 .filter ul {
+	margin: 0;
+	padding: 0;
+	
 	list-style: none;
 	font-size: 16px;
 	line-height: 20px;
-	margin: 0;
-	padding: 0;
 }
 
 .filter-radio .filter-option {
 	list-style: none;
+	
 	height: 25px;
 	vertical-align: middle;
 }
 
 .filter-radio {
 	display: inline-block;
+	
 	width: 260px;
 	margin-right: -4px;
+	
+	vertical-align: top;
 }
 
 .filter-radio label {
 	display: inline-block;
-	cursor: pointer;
+	
 	position: relative;
 	padding-top: 1px;
 	padding-left: 36px;
 	margin-bottom: 0px;
 	margin-top: 0px;
+	
+	vertical-align: top;
+	cursor: pointer;
 }
 
 .filter-radio input[type="radio"] {
@@ -814,12 +864,16 @@ section.studio ul.studio-list {
 
 .filter-radio input[type=radio] + label::before {
 	content: "";
+	
 	display: inline-block;
+	
 	position: absolute;
-	width: 25px;
-	height: 25px;
 	left: 1px;
 	top: -1px;
+	
+	width: 25px;
+	height: 25px;
+
 	vertical-align: middle;
 }
 
@@ -881,24 +935,32 @@ section.studio ul.studio-list {
 
 .filter-checkbox .filter-option {
 	list-style: none;
+	
 	height: 23px;
 	vertical-align: middle;
 }
 
 .filter-checkbox {
 	display: inline-block;
+	
 	width: 260px;
 	margin-right: -4px;
+	
+	vertical-align: top;
 }
 
 .filter-checkbox label {
 	display: inline-block;
-	cursor: pointer;
+	
 	position: relative;
+	
 	padding-top: 1px;
 	padding-left: 36px;
 	margin-bottom: 0px;
 	margin-top: 0px;
+	
+	vertical-align: top;
+	cursor: pointer;
 }
 
 .filter-checkbox input[type="checkbox"] {
@@ -907,12 +969,15 @@ section.studio ul.studio-list {
 
 .filter-checkbox input[type=checkbox] + label::before {
 	content: "";
+	
 	display: inline-block;
+	
 	position: absolute;
-	width: 23px;
-	height: 23px;
 	left: 1px;
 	top: -1px;
+	
+	width: 23px;
+	height: 23px;
 	vertical-align: middle;
 }
 
@@ -980,16 +1045,11 @@ label:disabled {
 
 .button.filter-button {
 	display: inline-block;
-	padding: 17px 40px;
-	color: rgba(255,255,255,1);
+	
 	min-width: 260px;
 	height: 50px;
-	background-color: #eeeeee;
-	border-radius: 3px;
-	text-align: center;
-	vertical-align: middle;
-	border: none;
-
+	padding: 17px 40px;
+	
 	list-style: none;
 	font-size: 16px;
 	line-height: 18px;
@@ -998,6 +1058,14 @@ label:disabled {
 	font-style: normal;
 	font-weight: 500;
 	text-transform: uppercase;
+	
+	background-color: #eeeeee;
+	border-radius: 3px;
+	text-align: center;
+	vertical-align: middle;
+	border: none;
+
+
 }
 
 .button.filter-button:hover,
@@ -1045,6 +1113,7 @@ label:disabled {
 	    -ms-flex-pack: start;
 	        justify-content: flex-start;
 	width: 280px;
+
 }
 
 .list-filter li:nth-child(2){
@@ -1065,7 +1134,7 @@ label:disabled {
 	text-transform: uppercase;
 }
 
-.catalog-filter ul {
+.list-filter a {
 	list-style: none;
 	font-size: 14px;
 	line-height: 18px;
@@ -1079,18 +1148,19 @@ label:disabled {
 .list-filter a,
 .button-filter button {
 	display: block;
+	
 	padding-top: 5px;
 	padding-bottom: 8px;
 
 	vertical-align: middle;
 }
 
-.catalog-filter a:hover,
-.catalog-filter a:focus {
+.list-filter a:hover,
+.list-filter a:focus {
 	color: rgba(0,0,0,0.6);
 }
 
-.catalog-filter a:active {
+.list-filter a:active {
 	color: rgba(0,0,0,1);
 }
 
@@ -1123,7 +1193,7 @@ label:disabled {
 	fill: #231f20;
 }
 
-/* ---------------------делаю сейчас ------------------------*/
+
 .catalog-list {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -1141,14 +1211,19 @@ label:disabled {
 
 .catalog-item {
 	position: relative;
+	
 	display: inline-block;
+	
 	width: 360px;
 	height: 616px;
 	margin-bottom: 33px;
 	margin-right: 36px;
+	
 	border: 1px solid rgba(77,77,77,0.1);
 	border-radius: 6px;
 	text-align: center;
+	
+	vertical-align: top;
 } 
 
 .browser {
@@ -1163,9 +1238,12 @@ label:disabled {
 	position: absolute;
 	bottom: 0;
 	left: 0;
+	
 	width: 360px;
 	height: 232px;
+	
 	background-color: #eeeeee;
+	
 	z-index: 10;
 }
 
@@ -1184,11 +1262,12 @@ label:disabled {
 	max-width: 100%;
 }
 .actions-item {
+	max-width: 200px;
 	margin: 0 auto;
 	padding: 0;
 	margin-top: 27px;
+	
 	border: 0;
-	max-width: 200px;
 }
 
 .actions-item h3 {
@@ -1215,11 +1294,15 @@ label:disabled {
 
 .actions-item .button {
 	position: relative;
+	
 	display: inline-block;
+	
+	min-width: 200px;
 	margin-bottom: 44px;
 	padding: 0;
+	
 	color: rgba(255,255,255,1);
-	min-width: 200px;
+	
 	background-color: #fb565a;
 	border-radius: 3px;
 }
@@ -1231,6 +1314,7 @@ label:disabled {
 
 .actions-item .button:active {
 	color: rgba(255,255,255,0.3);
+	
 	background-color: #d7373b;
 	-webkit-box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 	box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
@@ -1255,7 +1339,6 @@ label:disabled {
 	color: #ffffff;
 }
 
-/* ---------------------делаю сейчас ------------------------*/
 .pagination {
 	width: 443px;
 }
@@ -1325,9 +1408,69 @@ label:disabled {
 /* ----- Map ------------------ */
 
 .contacts {
-	background-color: #ffffff;
 	width: 100%;
 	margin-bottom: 0;
+	
+	background-color: #ffffff;
+}
+
+.contacts-map {
+	position: relative;
+	
+	width: 1440px;
+	margin: 0 auto;
+	padding: 0;
+	border: none;
+}
+
+
+.contacts-item {
+	position: absolute;
+	top: 54px;
+	left: 140px;
+	
+	width: 318px;
+	height: 308px;
+	margin: 0 auto;
+	
+	background-color: #ffffff;
+	border: none;
+}
+
+.contacts-box {
+	padding-top: 49px;
+	padding-left: 50px;
+}
+
+.contacts-box::after {
+	content: "";
+
+	position: absolute;
+	top: 35px;
+	left: 545px;
+
+	width: 367px;
+	height: 190px;
+
+	background: url("../img/map-marker.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-color: transparent;
+}
+
+.contacts-item p:nth-of-type(1) {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.contacts-item p:nth-of-type(2) {
+	margin-top: 22px;
+	margin-bottom: 19px;
+}
+
+.contacts-item p:nth-of-type(3) {
+	margin-top: 0px;
+	margin-bottom: 38px;
 }
 
 .contacts-item strong{
@@ -1343,7 +1486,7 @@ label:disabled {
 .contacts-item p{
 	font-size: 16px;
 	line-height: 18px;
-	color: #000000;
+	color: #666666;
 	font-family: 'Roboto', 'Arial', sans-serif;
 	font-style: normal;
 	font-weight: 400;
@@ -1362,10 +1505,14 @@ label:disabled {
 
 .button.contacts-button {
 	display: inline-block;
-	padding: 17px 40px;
-	color: rgba(255,255,255,1);
+	
 	min-width: 220px;
 	height: 50px;
+	padding: 17px 40px;
+	margin-top: 0;
+	
+	color: rgba(255,255,255,1);
+
 	background-color:#fb565a;
 	border-radius: 3px;
 }
@@ -1377,6 +1524,7 @@ label:disabled {
 
 .button.contacts-button:active {
 	color: rgba(255,255,255,0.3);
+	
 	background-color: #d7373b;
 	-webkit-box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 	        box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
@@ -1399,6 +1547,7 @@ label:disabled {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	
 	height: 80px;
 }
 
@@ -1435,8 +1584,8 @@ label:disabled {
 	justify-content: center;
 	width: 80px;
 	height: 80px;
-	border-radius: 40px;
 	
+	border-radius: 40px;
 	background-color: #e1e1e1;
 	opacity: 0.2;
 }
@@ -1480,7 +1629,92 @@ div.social-item p {
 
 /* ----- Напишите нам--------------- */
 
+.modal {
+	position: fixed;
+	-webkit-box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
+	        box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
+	
+	background-color: #ffffff;
+}
+
+.write-us {
+	top: 120px;
+	left: 50%;
+	
+	display: none;
+	
+	padding-left: 100px;
+	padding-top: 69px;
+	padding-bottom: 84px;
+	padding-right: 100px;
+	width: 760px;
+	margin-left: -477px;
+}
+
+.cancel-button {
+	position: absolute;
+	top: 90px;
+	right: 100px;
+	
+	width: 0px;
+	height: 0px;
+
+	font-size: 0;
+
+	background-color: transparent;
+	border: 0;
+
+	cursor: pointer;
+}
+
+.cancel-button::before,
+.cancel-button::after {
+	content: "";
+
+	position: absolute;
+	top: -2px;
+	left: 5px;
+
+	width: 31px;
+	height: 3px;
+
+	background-color: rgba(251,86,90,0.3);
+}
+
+.cancel-button:hover::before,
+.cancel-button:focus::before,
+.cancel-button:hover::after,
+.cancel-button:focus::after {
+	background-color: #fb565a;
+}
+
+.cancel-button:active::before,
+.cancel-button:active::after {
+	background-color: rgba(251,86,90,0.1);
+}
+
+.cancel-button:active,
+.cancel-button:focus,
+.cancel-button:hover {
+	background-color: transparent;
+}
+
+.cancel-button::before {
+	-webkit-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	        transform: rotate(45deg);
+}
+
+.cancel-button::after {
+	-webkit-transform: rotate(-45deg);
+	    -ms-transform: rotate(-45deg);
+	        transform: rotate(-45deg);
+}
+
 .write-us h2 {
+	margin: 0;
+	margin-bottom: 39px;
+	
 	font-size: 45px;
 	line-height: 45px;
 	color: #000000;
@@ -1490,7 +1724,33 @@ div.social-item p {
 	text-transform: none;
 }
 
+.contact-form {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+
+.contact-item {
+	width: 360px;
+	margin: 0;
+} 
+
+.write-us p:nth-of-type(3){
+	width: 760px;
+	margin: 0;
+}
+
 .contact-item label {
+	display: block;
+	
+	margin-bottom: 10px;
+	margin-left: 0px;
+	
 	font-size: 16px;
 	line-height: 18px;
 	color: #000000;
@@ -1498,6 +1758,35 @@ div.social-item p {
 	font-style: normal;
 	font-weight: 700;
 	text-transform: none;
+}
+
+.contact-item label[for="text-field"] {
+	display: block;
+	
+	width: 760px;
+	margin-bottom: 8px;
+	margin-left: 0px;
+}
+
+.contact-item input {
+	width: 360px;
+	padding: 15px 15px;
+	margin-bottom: 36px;
+	
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.contact-item textarea {
+	width: 760px;
+	padding-top: 13px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 5px;
+	margin-bottom: 40px;
+	
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 .contact-item input[type="email"],
@@ -1515,8 +1804,11 @@ div.social-item p {
 .contact-form textarea {
 	font: inherit;
 	color: rgba(68,68,68,0.5);
+	
 	background-color: #ffffff;
 	border: 2px solid #d7dcde;
+	
+	cursor: pointer;
 }
 
 .contact-item input:hover,
@@ -1527,6 +1819,50 @@ div.social-item p {
 .contact-item input:focus,
 .contact-form textarea:focus {
 	color: rgba(68,68,68,1);
+	
 	border-color: black;
 	outline: none;
+}
+
+
+.contact-item input .invalid {
+	color: #e74246;
+	border-color: #e74246;
+	outline: none;
+}
+
+.write-us .submit-button {
+	font-size: 16px;
+	line-height: 18px;
+	color: #ffffff;
+	font-family: 'Roboto', 'Arial', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.write-us .submit-button {
+	display: inline-block;
+	
+	padding: 17px 40px;
+	min-width: 260px;
+	height: 50px;
+	
+	color: rgba(255,255,255,1);
+	
+	background-color:#fb565a;
+	border-radius: 3px;
+}
+
+
+.write-us .submit-button:hover,
+.write-us .submit-button:focus {
+	background-color: #e74246;
+}
+
+.write-us .submit-button:active {
+	color: rgba(255,255,255,0.3);
+	background-color: #d7373b;
+	-webkit-box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
+	        box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 }
