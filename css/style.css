@@ -1,3 +1,7 @@
+html {
+	overflow-x: hidden;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -137,8 +141,6 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
-
-	width: 486px;
 }
 
 .basket-navigation {
@@ -247,10 +249,10 @@ input[type="radio"].visually-hidden {
 	
 	width: 4px;
 	height: 4px;
-	margin: 0 3px;
+	margin: 0 9px;
 	
 	background: white;
-	border: 3px solid white;
+	border: 5px solid white;
 	vertical-align: top;
 	border-radius: 50%;
 	cursor: pointer;
