@@ -1,5 +1,10 @@
 html {
 	overflow-x: hidden;
+	box-sizing: border-box;
+}
+
+html * {
+	box-sizing: inherit;
 }
 
 body {
@@ -391,7 +396,7 @@ input[type="radio"].visually-hidden {
 	
 	min-width: 126px;
 	height: 16px;
-	padding: 17px 40px;
+	padding: 17px 17px;
 	
 	color: rgba(255,255,255,1);
 	background-color: #fb565a;
@@ -415,7 +420,7 @@ input[type="radio"].visually-hidden {
 	
 	min-width: 126px;
 	height: 16px;
-	padding: 17px 40px;
+	padding: 17px 17px;
 	
 	color: rgba(255,255,255,1);
 	
@@ -440,7 +445,7 @@ input[type="radio"].visually-hidden {
 	
 	min-width: 126px;
 	height: 16px;
-	padding: 17px 40px;
+	padding: 17px 17px;
 	
 	color: rgba(255,255,255,1);
 	background-color:#efc84a;
