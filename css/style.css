@@ -1,10 +1,62 @@
+/* cyrillic */
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v16/mErvLBYg_cXG3rLvUsKT_fesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin */
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v16/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* cyrillic */
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v16/oHi30kwQWvpCWqAhzHcCSBJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin */
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v16/RxZJdnzeo3R5zSexge8UUVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* cyrillic */
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v16/isZ-wbCXNKAbnjo6_TwHThJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin */
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v16/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+
 html {
 	overflow-x: hidden;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 html * {
-	box-sizing: inherit;
+	-webkit-box-sizing: inherit;
+	        box-sizing: inherit;
 }
 
 body {
@@ -252,8 +304,8 @@ input[type="radio"].visually-hidden {
 .slider-controls label {
 	display: inline-block;
 	
-	width: 4px;
-	height: 4px;
+	width: 14px;
+	height: 14px;
 	margin: 0 9px;
 	
 	background: white;
@@ -394,9 +446,8 @@ input[type="radio"].visually-hidden {
 .button.advantages-button-red {
 	display: inline-block;
 	
-	min-width: 126px;
-	height: 16px;
-	padding: 17px 17px;
+	min-width: 160px;
+	padding: 16px 0;
 	
 	color: rgba(255,255,255,1);
 	background-color: #fb565a;
@@ -418,9 +469,8 @@ input[type="radio"].visually-hidden {
 .button.advantages-button-green {
 	display: inline-block;
 	
-	min-width: 126px;
-	height: 16px;
-	padding: 17px 17px;
+	min-width: 160px;
+	padding: 16px 0;
 	
 	color: rgba(255,255,255,1);
 	
@@ -443,9 +493,8 @@ input[type="radio"].visually-hidden {
 .button.advantages-button-yellow {
 	display: inline-block;
 	
-	min-width: 126px;
-	height: 16px;
-	padding: 17px 17px;
+	min-width: 160px;
+	padding: 16px 0;
 	
 	color: rgba(255,255,255,1);
 	background-color:#efc84a;
@@ -736,7 +785,7 @@ section.studio ul.studio-list {
 .range-controls {
 	position: relative;
 	
-	height: 41px;
+	height: 80px;
 	padding-top: 39px;
 	padding-right: 20px;
 	padding-left: 20px;
@@ -762,8 +811,8 @@ section.studio ul.studio-list {
 	top: 30px;
 	left: 0px;
 	
-	width: 4px;
-	height: 4px;
+	width: 20px;
+	height: 20px;
 	
 	cursor: pointer;
 	border: 8px solid #fff;
@@ -801,7 +850,7 @@ section.studio ul.studio-list {
 }
 
 .price-controls input {
-	width: 60px;
+	width: 80px;
 	margin-left: 10px;
 	padding: 10px 10px;
 	text-align: center;
@@ -834,6 +883,18 @@ section.studio ul.studio-list {
 	list-style: none;
 	font-size: 16px;
 	line-height: 20px;
+}
+
+.filter-radio .filter-option:nth-child(1) {
+	height: 55px;
+	padding-top: 14px;
+	padding-bottom: 16px;
+}
+
+.filter-radio .filter-option:nth-child(3) {
+	height: 55px;
+	padding-top: 16px;
+	padding-bottom: 41px;
 }
 
 .filter-radio .filter-option {
@@ -928,16 +989,6 @@ section.studio ul.studio-list {
 
 .filter-radio label:disabled {
 	color: rgba(40,49,54,0.3);
-}
-
-.filter-radio .filter-option:nth-child(1) {
-	padding-top: 14px;
-	padding-bottom: 16px;
-}
-
-.filter-radio .filter-option:nth-child(3) {
-	padding-top: 16px;
-	padding-bottom: 41px;
 }
 
 .filter-checkbox .filter-option {
@@ -1035,16 +1086,19 @@ label:disabled {
 }
 
 .filter-checkbox .filter-option:first-child {
+	height: 59px;
 	padding-top: 15px;
 	padding-bottom: 18px;
 }
 
 .filter-checkbox .filter-option:nth-child(3) {
+	height: 59px;
 	padding-top: 18px;
 	padding-bottom: 18px;
 }
 
 .filter-checkbox .filter-option:last-child {
+	height: 59px;
 	padding-top: 18px;
 	padding-bottom: 49px;
 }
@@ -1221,13 +1275,11 @@ label:disabled {
 	
 	display: inline-block;
 	
-	width: 360px;
-	height: 616px;
 	margin-bottom: 33px;
 	margin-right: 36px;
 	
 	border: 1px solid rgba(77,77,77,0.1);
-	border-radius: 6px;
+	border-radius: 5px;
 	text-align: center;
 	
 	vertical-align: top;
@@ -1416,9 +1468,7 @@ label:disabled {
 
 .contacts {
 	position: relative;
-	/*width: 1440px;
-	height: 416px;*/
-	margin-bottom: 61px;
+	height: 416px;
 	
 	background-color: #ffffff;
 }
@@ -1428,6 +1478,7 @@ label:disabled {
 	
 	left: 0;
 	top: 0;
+	
 	margin: 0 auto;
 	padding: 0;
 	border: none;
@@ -1436,7 +1487,7 @@ label:disabled {
 }
 
 .contacts-map img{
-	max-height: 100%;
+	height: 416px;
 	width: auto;
 }
 
@@ -1462,8 +1513,8 @@ label:disabled {
 	content: "";
 
 	position: absolute;
-	top: 89px;
-	left: 686px;
+	top: 44px;
+	left: 502px;
 
 	width: 367px;
 	height: 190px;
