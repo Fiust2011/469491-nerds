@@ -314,9 +314,9 @@ input[type="radio"].visually-hidden {
 	border-radius: 50%;
 	cursor: pointer;
 }
-#btn-1:checked ~ .slider-controls label[for="btn-1"],
-#btn-2:checked ~ .slider-controls label[for="btn-2"],
-#btn-3:checked ~ .slider-controls label[for="btn-3"] { 
+.btn-1:checked ~ .slider-controls label[for="btn-1"],
+.btn-2:checked ~ .slider-controls label[for="btn-2"],
+.btn-3:checked ~ .slider-controls label[for="btn-3"] { 
 	background: #c2c2c2;
 }
 .slide {
