@@ -397,13 +397,13 @@ input[type="radio"].visually-hidden {
 .slide{
 	display: none;
 }
-#btn-1:checked ~ .slides .slide:nth-child(1) { 
+.btn-1:checked ~ .slides .slide:nth-child(1) { 
 	display: block;
 }
-#btn-2:checked ~ .slides .slide:nth-child(2) { 
+.btn-2:checked ~ .slides .slide:nth-child(2) { 
 	display: block;
 }
-#btn-3:checked ~ .slides .slide:nth-child(3) { 
+.btn-3:checked ~ .slides .slide:nth-child(3) { 
 	display: block;
 }
 
