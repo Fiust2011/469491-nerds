@@ -260,7 +260,7 @@ input[type="radio"].visually-hidden {
 #btn-1:checked ~ .slider-controls label[for="btn-1"],
 #btn-2:checked ~ .slider-controls label[for="btn-2"],
 #btn-3:checked ~ .slider-controls label[for="btn-3"] { 
-	background: #c1c1c1;
+	background: #c2c2c2;
 }
 .slide {
 	position: absolute;
@@ -1410,30 +1410,39 @@ label:disabled {
 /* ----- Map ------------------ */
 
 .contacts {
-	width: 100%;
-	margin-bottom: 0;
+	position: relative;
+	/*width: 1440px;
+	height: 416px;*/
+	margin-bottom: 61px;
 	
 	background-color: #ffffff;
 }
 
 .contacts-map {
-	position: relative;
+	position: absolute;
 	
-	width: 1440px;
+	left: 0;
+	top: 0;
 	margin: 0 auto;
 	padding: 0;
 	border: none;
+	
+	overflow: hidden;
 }
 
+.contacts-map img{
+	max-height: 100%;
+	width: auto;
+}
 
 .contacts-item {
-	position: absolute;
-	top: 54px;
-	left: 140px;
+	position: relative;
+	top: 49px;
 	
 	width: 318px;
 	height: 308px;
-	margin: 0 auto;
+	margin: 0;
+	padding: 0;
 	
 	background-color: #ffffff;
 	border: none;
@@ -1448,8 +1457,8 @@ label:disabled {
 	content: "";
 
 	position: absolute;
-	top: 35px;
-	left: 545px;
+	top: 89px;
+	left: 686px;
 
 	width: 367px;
 	height: 190px;
