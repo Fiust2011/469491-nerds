@@ -1472,18 +1472,32 @@ label:disabled {
 	
 	background-color: #ffffff;
 }
-
+/*
 .contacts-map {
 	position: absolute;
 	
 	left: 0;
 	top: 0;
 	
-	margin: 0 auto;
+	width: 100%;
+	margin: auto;
 	padding: 0;
-	border: none;
+	border: 0;
 	
 	overflow: hidden;
+}
+*/
+.contacts-map {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    text-align: center;
 }
 
 .contacts-map img{
