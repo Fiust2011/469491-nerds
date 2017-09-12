@@ -256,6 +256,31 @@ input[type="radio"].visually-hidden {
 	background-position: 0 0;
 }
 
+.site-navigation-current {
+	position: relative;
+}
+
+.site-navigation-current a[href] {
+	pointer-events: none;
+}
+
+.site-navigation-current a:not([href]) {
+	background-color: #eeeeee;
+}
+
+.site-navigation-current:after {
+	content: "";
+
+	position: absolute;
+	right: 20px;
+	bottom: 0;
+	left: 20px;
+
+	height: 2px;
+
+	background-color: #fb565a;
+}
+
 .back-top {
 	width: 100%;
 	background-color: #eeeeee;
@@ -264,7 +289,7 @@ input[type="radio"].visually-hidden {
 .main-slider,
 .main-top,
 .container {
-	width: 1160px;
+	width: 1200px;
 	margin: 0 auto;
 	padding: 0 20px;
 }
@@ -277,7 +302,7 @@ input[type="radio"].visually-hidden {
 	position: relative;
 	
 	width: 100%;
-	height: 430px;
+	min-height: 431px;
 	margin: 0 auto;
 	margin-bottom: 80px;
 	padding: 0;
@@ -291,8 +316,8 @@ input[type="radio"].visually-hidden {
 }
 .slider-controls {
 	position: absolute;
-	bottom: 95px;
-	left: 50%;
+	bottom: 103px;
+	left: 581px;
 	
 	width: 200px;
 	height: 10px;
@@ -302,30 +327,52 @@ input[type="radio"].visually-hidden {
 	z-index: 1000;
 }
 .slider-controls label {
+	position: relative;
 	display: inline-block;
 	
-	width: 14px;
-	height: 14px;
-	margin: 0 9px;
+	width: 18px;
+	height: 18px;
+	margin: 0 7px;
 	
 	background: white;
-	border: 5px solid white;
 	vertical-align: top;
 	border-radius: 50%;
 	cursor: pointer;
 }
-.btn-1:checked ~ .slider-controls label[for="btn-1"],
-.btn-2:checked ~ .slider-controls label[for="btn-2"],
-.btn-3:checked ~ .slider-controls label[for="btn-3"] { 
-	background: #c2c2c2;
-}
-.slide {
+
+.slider-controls label:after {
 	position: absolute;
-	top: 0;
-	left: 0;
+	display: inline-block;
+	content: "";
+	left: -4px;
+	top: 5px;
+	width: 4px;
+	height: 4px;
+	margin: 0 9px;
+	border: 2px solid white;
 	
+	background: white;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+
+.btn-1:checked ~ .slider-controls label[for="btn-1"]:after,
+.btn-2:checked ~ .slider-controls label[for="btn-2"]:after,
+.btn-3:checked ~ .slider-controls label[for="btn-3"]:after { 
+
+	border: 2px solid #c2c2c2;
+}
+
+
+
+
+.slide {
 	width: 100%;
 	height: 100%;
+	margin: 0 auto;
+	padding: 0;
+	border: 0;
 	
 	overflow: hidden;
 }
@@ -347,6 +394,7 @@ input[type="radio"].visually-hidden {
 }
 
 .slide-text p {
+	width: 73%;
 	padding-top: 8px;
 }
 
@@ -1293,35 +1341,33 @@ label:disabled {
 	fill: #e9e9e9;
 }
 
-.catalog-item .actions{
+.catalog-item .actions {
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	
 	width: 360px;
-	height: 232px;
+	min-height: 232px;
 	
 	background-color: #eeeeee;
 	
 	z-index: 10;
 }
 
-.catalog-item .actions{
+.catalog-item .actions {
 	display: none;
 }
-.catalog-item:hover .actions{
+.catalog-item:hover .actions {
 	display: block;
 }
 
-.catalog-item .image{
+.catalog-item .image {
 	width: 360px;
 	height: 576px;
 }
-.catalog-item .image img {
-	max-width: 100%;
-}
+
 .actions-item {
-	max-width: 200px;
+	max-width: 240px;
 	margin: 0 auto;
 	padding: 0;
 	margin-top: 27px;
@@ -1340,6 +1386,12 @@ label:disabled {
 	font-weight: 700;
 	text-transform: uppercase;  
 }
+
+.actions-item a {
+	color: #000000;
+}
+
+
 .actions-item .description {
 	min-width: 200px;
 	min-height: 18px;
@@ -1467,47 +1519,29 @@ label:disabled {
 /* ----- Map ------------------ */
 
 .contacts {
-	position: relative;
 	height: 416px;
 	
 	background-color: #ffffff;
 }
-/*
+
 .contacts-map {
-	position: absolute;
-	
-	left: 0;
-	top: 0;
-	
 	width: 100%;
-	margin: auto;
+	height: 100%;
+	margin: 0 auto;
 	padding: 0;
 	border: 0;
-	
 	overflow: hidden;
-}
-*/
-.contacts-map {
-    position: absolute;
-    left: 0;
-    top: 0;
-    margin: 0 auto;
-    padding: 0;
-    border: 0;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    text-align: center;
+	text-align: center;
 }
 
-.contacts-map img{
+.contacts-map iframe {
 	height: 416px;
-	width: auto;
+	border: none;
 }
 
 .contacts-item {
 	position: relative;
-	top: 49px;
+	top: -369px;
 	
 	width: 318px;
 	height: 308px;
@@ -1523,12 +1557,13 @@ label:disabled {
 	padding-left: 50px;
 }
 
+/*
 .contacts-box::after {
 	content: "";
 
 	position: absolute;
-	top: 44px;
-	left: 502px;
+	top: 43px;
+	left: 495px;
 
 	width: 367px;
 	height: 190px;
@@ -1538,7 +1573,7 @@ label:disabled {
 	background-position: 0 0;
 	background-color: transparent;
 }
-
+*/
 .contacts-item p:nth-of-type(1) {
 	margin-top: 0;
 	margin-bottom: 0;
@@ -1714,10 +1749,11 @@ div.social-item p {
 	        box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
 	
 	background-color: #ffffff;
+	z-index: 3;
 }
 
 .write-us {
-	top: 120px;
+	top: 50px;
 	left: 50%;
 	
 	display: none;
@@ -1726,7 +1762,7 @@ div.social-item p {
 	padding-top: 69px;
 	padding-bottom: 84px;
 	padding-right: 100px;
-	width: 760px;
+	width: 960px;
 	margin-left: -477px;
 }
 
@@ -1903,21 +1939,67 @@ div.social-item p {
 	outline: none;
 }
 
-
-.contact-item input .invalid {
+.contact-item input[placeholder]:invalid {
 	color: #e74246;
-	border-color: #e74246;
-	outline: none;
+	
+	border: 2px solid #e74246;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+
+@keyframes bounce {
+	0% {
+		transform: translateY(-2000px);
+	}
+	
+	70% {
+		transform: translateY(30px);
+	}
+	
+	90% {
+		transform: translateY(-10px);
+	}
+	
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes shake {
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+		transform: translateX(-10px);
+	}
+
+	20%,
+	40%,
+	60%,
+	80% {
+		transform: translateX(10px);
+	}
+}
+
+.modal-show {
+	display: block;
+	
+	animation: bounce 0.6s;
+}
+
+.modal-error {
+	animation: shake 0.6s;
 }
 
 .write-us .submit-button {
-	font-size: 16px;
-	line-height: 18px;
-	color: #ffffff;
-	font-family: 'Roboto', 'Arial', sans-serif;
-	font-style: normal;
-	font-weight: 500;
-	text-transform: uppercase;
+
 }
 
 .write-us .submit-button {
@@ -1927,7 +2009,13 @@ div.social-item p {
 	min-width: 260px;
 	height: 50px;
 	
-	color: rgba(255,255,255,1);
+	font-size: 16px;
+	line-height: 18px;
+	color: #ffffff;
+	font-family: 'Roboto', 'Arial', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	text-transform: uppercase;
 	
 	background-color:#fb565a;
 	border-radius: 3px;

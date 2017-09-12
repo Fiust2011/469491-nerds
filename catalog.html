@@ -5,7 +5,7 @@
 		<title>Нёрдс</title>
 		<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/normalize.css">
-		<link href="css/style.css" rel="stylesheet">
+		<link href="css/style.min.css" rel="stylesheet">
 	</head>
 	<body class="inner-page">
 		<header class="main-header">
@@ -16,12 +16,12 @@
 					</a>
 					<ul class="site-navigation">
 						<li><a href="index.html">Студия</a></li>
-						<li><a href="info.html">Клиенты</a></li>
-						<li><a href="catalog.html">Магазин</a></li>
-						<li><a href="info.html">Контакты</a></li>
+						<li><a href="#">Клиенты</a></li>
+						<li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
+						<li><a href="#">Контакты</a></li>
 					</ul>
 					<div class="basket-navigation">
-						<a class="basket" href="basket.html/">корзина</a>
+						<a class="basket" href="#">корзина</a>
 					</div>
 				</div>
 			</nav>
@@ -136,9 +136,9 @@
 									<img src="img/img-sedona.png" width="360" height="576" alt="Sedona">
 									<div class="actions">
 										<div class="actions-item">
-											<h3 class="title">Sedona</h3>
-											<p class="description">Информационный сайт для туристов</p>
-											<a class="button" href="#">9 900 р.</a>
+											<h3 class="title"><a href="#">Sedona</a></h3>
+											<p class="description">Информационный сайт<br>для туристов</p>
+											<button class="button">9 900 р.</button>
 										</div>
 									</div>
 								</div>
@@ -149,9 +149,9 @@
 									<img src="img/img-pink.png" width="360" height="576" alt="Pink App">
 									<div class="actions">
 										<div class="actions-item">
-											<h3 class="title">Pink App</h3>
+											<h3 class="title"><a href="#">Pink App</a></h3>
 											<p class="description">Продуктовый лендинг приложения для iOS и Android</p>
-											<a class="button" href="#">9 900 р.</a>
+											<button class="button">9 900 р.</button>
 										</div>
 									</div>
 								</div>
@@ -162,9 +162,9 @@
 									<img src="img/img-barbershop.png" width="360" height="576" alt="Barbershop">
 									<div class="actions">
 										<div class="actions-item">
-											<h3 class="title">barbershop</h3>
-											<p class="description">Сайт салоны красоты. Для мужчин, Да</p>
-											<a class="button" href="#">9 900 р.</a>
+											<h3 class="title"><a href="#">barbershop</a></h3>
+											<p class="description">Сайт салоны красоты.<br>Для мужчин, Да</p>
+											<button class="button">9 900 р.</button>
 										</div>
 									</div>
 								</div>
@@ -175,9 +175,9 @@
 									<img src="img/img-mishka.png" width="360" height="576" alt="Barbershop">
 									<div class="actions">
 										<div class="actions-item">
-											<h3 class="title">MISHKA</h3>
-											<p class="description">Интернет-магазин вязаных игрушек</p>
-											<a class="button" href="#">9 900 р.</a>
+											<h3 class="title"><a href="#">MISHKA</a></h3>
+											<p class="description">Интернет-магазин<br>вязаных игрушек</p>
+											<button class="button">9 900 р.</button>
 										</div>
 									</div>
 								</div>
@@ -188,9 +188,9 @@
 									<img src="img/img-aplus.png" width="360" height="576" alt="A plus">
 									<div class="actions">
 										<div class="actions-item">
-											<h3 class="title">A plus</h3>
+											<h3 class="title"><a href="#">A plus</a></h3>
 											<p class="description">Лендинг курсов повышения квалификации</p>
-											<a class="button" href="#">9 900 р.</a>
+											<button class="button">9 900 р.</button>
 										</div>
 									</div>
 								</div>
@@ -201,9 +201,9 @@
 									<img src="img/img-kvast.png" width="360" height="576" alt="Kvast">
 									<div class="actions">
 										<div class="actions-item">
-											<h3 class="title">Кваст</h3>
+											<h3 class="title"><a href="#">Кваст</a></h3>
 											<p class="description">Промо-сайт производителя крафтового кваса</p>
-											<a class="button" href="#">9 900 р.</a>
+											<button class="button">9 900 р.</button>
 										</div>
 									</div>
 								</div>
@@ -211,7 +211,7 @@
 						</ul>
 						<div class="pagination">
 							<ul class="pagination-list">
-								<li class="pagination-item pagination-item-current"><a>1</a></li>
+								<li class="pagination-item pagination-item-current"><a href="#">1</a></li>
 								<li class="pagination-item"><a href="#">2</a></li>
 								<li class="pagination-item"><a href="#">3</a></li>
 								<li class="pagination-item pagination-item-button"><a href="#">Следующая</a></li>
@@ -223,9 +223,7 @@
 			<section class="contacts">
 				<h2 class="visually-hidden">Контактная информация</h2>
 				<div class="contacts-map">
-					<a href="#">
-						<img src="img/map.png" width="1440" height="416" alt="191186, Санкт-Петербург ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75">
-					</a>
+				<iframe src="https://yandex.ru/map-widget/v1/-/CBURUSwM-A" width="1440" height="416"></iframe>
 				</div>
 				<div class="container">
 					<div class="contacts-item">
@@ -260,11 +258,11 @@
 				<form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
 					<p class="contact-item">
 						<label for="login-field" class="contact-name">Ваше имя:</label>
-						<input type="text" name="login" id="login-field" placeholder="Представьтесь, пожалуйста" required>
+						<input class="form-text-input" type="text" name="login" id="login-field" placeholder="Представьтесь, пожалуйста">
 					</p>
 					<p class="contact-item">
 						<label for="email-field" class="contact-email">Ваш e-mail:</label>
-						<input type="email" name="email" id="email-field" placeholder="Для отправки ответа" required>
+						<input type="email" name="email" id="email-field" placeholder="Для отправки ответа">
 					</p>
 					<p class="contact-item">
 						<label for="text-field">Текст письма:</label>
@@ -276,5 +274,6 @@
 				</form>
 				<button class="button cancel-button" type="button" value="Отмена"></button>
 			</section>
+			<script src="js/popup.min.js"></script>
 	</body>
 </html>
